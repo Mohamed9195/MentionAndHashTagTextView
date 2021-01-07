@@ -58,7 +58,7 @@ open class MentionAndHashTagTextView: UITextView {
 extension MentionAndHashTagTextView: UITextViewDelegate {
     public func textViewDidChange(_ textView: UITextView) {
         guard let string = textView.text else { return }
-        if string.last == "@" {
+        if string.last == "@" || string.last == "#" {
             self.attributedText = self.detect(string: string)
             self.addTransparentView(frames: self.self.frame)
         }
