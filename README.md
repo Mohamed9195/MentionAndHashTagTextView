@@ -8,7 +8,7 @@
 **then use** 
 ```
 public var friendsAre: [String]? // for result data 
-public var MHTextView: MentionAndHashTagTextView? /// add it as your textView the use MHTextView.parent = self
+public var MHTextView: MentionAndHashTagTextView? /// add it as your textView the use MHTextView.parentView = self
 ```
 
 **or can do any changment in code t use you textField and you controller by change** 
